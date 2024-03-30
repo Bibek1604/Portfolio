@@ -98,9 +98,9 @@ p {
     width: 679px;
     align-items: center;
     color: aliceblue;
-    margin-left: 300px;
+    margin-left: 30;
     font-size: 16px;
-    text-align: center;
+    
     margin-top: 20px; /* Adjust margin top as needed */
 }
 
@@ -186,7 +186,7 @@ p {
   .logo {
     width: 50px;
     height: 50px;
-    margin-right: 10px; /* Adjust as needed */
+   
   }
 .ee{
     display: flex;
@@ -207,6 +207,7 @@ p {
     font-size: larger;
     display: flex;
     color: aliceblue;
+    margin-left: 10%;
 
     
 
@@ -310,42 +311,71 @@ p {
     }
   }
   
+  .footer {
+    color: aliceblue;
+    height: auto; /* Adjust height to fit content */
+    background-color: #191919;
+    width: 100%;
+    padding: 20px; /* Add padding for better spacing */
+    display: flex;
+    justify-content: space-between; /* Space elements evenly */
+    align-items: flex-start; /* Align items at the top */
+}
 
 .contact-place {
-    margin-top: 10%;
-    margin-left: 5%;
+    margin-top: 10px; /* Adjust as needed */
 }
 
 .description {
-    margin-top: 5%;
     color: #8491A0;
-
-    margin-left: 5%;
 }
+
+.description table {
+    color: #8491A0;
+}
+
+.description label {
+    color: #8491A0;
+    margin-right: 10px; /* Add space between label and input */
+}
+
+.description input {
+    background-color: transparent;
+    color: white;
+    border: 1px solid #8491A0;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.description button {
+    background-color: #5BADFF; /* Button background color */
+    color: white; /* Button text color */
+    border: none;
+    padding: 8px 16px; /* Adjust button padding */
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 .social-icons {
-    display: flex; /* Arrange icons in a row */
-    justify-content: flex-start; /* Align icons to the start of the container */
-    /* Center icons vertically */
+    
+    margin-right: 3%;
+    display: flex;
+    justify-content: flex-end; /* Align icons to the right */
+    align-items: center; /* Center icons vertically */
 }
 
 .social-icons a {
-    width: 60px; /* Set width for each icon */
-    margin-right: 10px; /* Adjust as needed */
+    width: 30px; /* Adjust icon width */
+    height: 30px; /* Adjust icon height */
+    margin-left: 10px; /* Add space between icons */
 }
 
 .social-icons img {
-    margin-top: 100%;
-    margin-left: 100%;
-    width: 50%; /* Ensure image fills the container */
+    width: 100%; /* Ensure icons fill the container */
     height: auto; /* Maintain aspect ratio */
 }
 
 
-/* Add more specific styling if needed */
-.contact-place{
-    margin-top: 10%;
-
-}
 .navbar ul li a {
     text-decoration: none; /* Remove underline */
     color: white; /* Change text color to white */
@@ -356,5 +386,8 @@ p {
 
 }
 .navbar ul li a:hover {
-    color: blue; /* Change text color to blue on hover */
+    color: rgb(94, 94, 185); /* Change text color to blue on hover */
+}
+#submit{
+    margin-left: 2%;
 }
