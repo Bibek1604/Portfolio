@@ -46,3 +46,13 @@ document.addEventListener("DOMContentLoaded", function() {
         interval = setInterval(scrollSlider, 10); // Adjust interval duration as needed
     });
 });
+
+    document.addEventListener('DOMContentLoaded', function() {
+        var emailInput = document.getElementById('email');
+        emailInput.addEventListener('input', function() {
+            if (!emailInput.value.endsWith('@gmail.com')) {
+                emailInput.value += '@gmail.com';
+            }
+        });
+    });
+
