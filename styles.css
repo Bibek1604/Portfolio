@@ -312,6 +312,7 @@ p {
   }
   
   .footer {
+    
     color: aliceblue;
     height: auto; /* Adjust height to fit content */
     background-color: #191919;
@@ -399,4 +400,10 @@ p {
     display: flex;
     justify-content: center;
     align-items: center; /* Center vertically */
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+
 }
