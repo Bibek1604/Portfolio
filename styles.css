@@ -391,3 +391,12 @@ p {
 #submit{
     margin-left: 2%;
 }
+.last {
+    background-color: #191919;
+    height: 40px;
+    width: 100%;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center vertically */
+}
