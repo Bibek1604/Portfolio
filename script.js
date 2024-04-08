@@ -55,4 +55,45 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
     });
+    // Custom smooth scrolling function
+function smoothScroll(target, duration) {
+    const targetElement = document.querySelector(target);
+    const targetPosition = targetElement.getBoundingClientRect().top;
+    const startPosition = window.pageYOffset;
+    const distance = targetPosition - startPosition;
+    let startTime = null;
+
+    function animation(currentTime) {
+        if (startTime === null) startTime = currentTime;
+        const timeElapsed = currentTime - startTime;
+        const ease = Math.easeInOutQuad(timeElapsed, startPosition, distance, duration);
+        window.scrollTo(0, ease);
+        if (timeElapsed < duration) requestAnimationFrame(animation);
+    }
+
+    // Easing function
+    Math.easeInOutQuad = function (t, b, c, d) {
+        t /= d / 2;
+        if (t < 1) return c / 2 * t * t + b;
+        t--;
+        return -c / 2 * (t * (t - 2) - 1) + b;
+    };
+
+    requestAnimationFrame(animation);
+}
+
+// Smooth scrolling for navigation links
+document.addEventListener("DOMContentLoaded", function() {
+    const links = document.querySelectorAll('.navbar ul li a');
+
+    links.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            const targetId = this.getAttribute('href');
+            smoothScroll(targetId, 1000); // Adjust the duration (in milliseconds) as needed
+        });
+    });
+});
+
 

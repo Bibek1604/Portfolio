@@ -301,16 +301,6 @@ p {
     filter: blur(30px) drop-shadow(20px 20px 20px seagreen);
   }
   
-  @keyframes radar81 {
-    0% {
-      transform: rotate(0deg);
-    }
-  
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  
   .footer {
     
     color: aliceblue;
@@ -406,4 +396,11 @@ p {
     flex-direction: column;
     height: auto;
 
+}
+@media screen and (max-width:600px)
+{
+    .container: {
+        width: 100%;
+        max-width: 100%;
+    }
 }
