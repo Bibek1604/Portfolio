@@ -1,5 +1,6 @@
 from django.urls import path
-from .views import bibek
+from myapp.views import bibek
+
 
 urlpatterns = [
     path('bibek/', bibek, name='bibek'),
