@@ -397,9 +397,8 @@ p {
     height: auto;
 
 }
-@media screen and (max-width:600px)
-{
-    .container: {
+@media screen and (max-width: 600px) {
+    .container {
         width: 100%;
         max-width: 100%;
     }
